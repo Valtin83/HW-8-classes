@@ -1,23 +1,28 @@
 public class Book {
-    String title;
-    Author surname;
-     int yearPublication;
+    private String title;
+    private Author author;
+    private int publicationYear;
+
     // конструктор
-    public Book(String title, Author surname, int yearPublication) {
+    public Book(String title, Author author, int publicationYear) {
         this.title = title;
-        this.surname = surname;
-        this.yearPublication = yearPublication;
+        this.author = author;
+        this.publicationYear = publicationYear;
     }
+
     public String getTitle() {
-        return this.title;
+        return title;
     }
-    public Author getSurname() {
-        return this.surname;
+
+    public Author getAuthor() {
+        return author;
     }
-    public int getYearPublication() {
-        return this.yearPublication;
+
+    public int getPublicationYear() {
+        return publicationYear;
     }
-    public void setYearPublication(int YearPublication) {
-        this.yearPublication = YearPublication;
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 }
